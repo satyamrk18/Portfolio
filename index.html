@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+      }
+      .box {
+        height: 60px;
+        width: 60px;
+        background-color: rgba(128, 128, 128, 0);
+        margin: 3px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+      }
+
+      .box:hover {
+        box-shadow: 0 0 25px #f6e05e, 0 0 50px #f6e05e, 0 0 200px #f6e05e,
+          0 0 350px #f6e05e;
+        transition: box-shadow 0.1s;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <script>
+        for (let i = 0; i < 1035; i++) {
+          document.write('<div class="box"></div>');
+        }
+      </script>
+    </div>
+  </body>
+</html>
