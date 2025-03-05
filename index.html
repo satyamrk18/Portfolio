@@ -84,16 +84,29 @@
       }
       /* Extra small devices (phones) */
       @media (max-width: 576px) {
-        /* information box */
+        /*information card edit for mobile phone*/
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        /* Center the info card */
         .info {
-          width: 300px;
-          margin: 50px 30px auto;
-          display: block;
+          width: 350px;
+          margin: 0;
+          margin-top: 50px;
         }
       }
 
       /* Small devices (tablets) */
       @media (max-width: 768px) {
+        .info {
+          width: 300px;
+          display: block;
+          justify-content: center;
+          flex-direction: row;
+        }
       }
 
       /* Medium devices (desktops) */
