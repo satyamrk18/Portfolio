@@ -82,6 +82,19 @@
         border: 2px solid rgba(255, 217, 0, 0.669);
         background-color: rgba(0, 0, 0, 0.906);
       }
+      .phone-call-icon img {
+        height: 25px;
+        margin: 25px 10px 10px 25px;
+      }
+      .phone-call-icon {
+        display: flex;
+        align-items: center;
+      }
+      .number {
+        margin: 10px 0 0 0;
+        color: white;
+        text-decoration: none;
+      }
       /* Extra small devices (phones) */
       @media (max-width: 576px) {
         /*information card edit for mobile phone*/
@@ -124,6 +137,12 @@
         <img src="./images/sample-image.png" class="info-image" alt="photo" />
         <h2 class="name">Satyam Raosaheb Katkade</h2>
         <button class="web-dev">Web Developer</button>
+        <div class="phone-call-icon">
+          <img src="./logo/phone-call.png" alt="phone call icon" />
+          <a class="number" href="+917588035979" target="hpone"
+            >+917588035979</a
+          >
+        </div>
       </div>
       <script>
         for (let i = 0; i < 1035; i++) {
