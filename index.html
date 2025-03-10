@@ -8,6 +8,10 @@
       * {
         font-family: sans-serif;
       }
+      a {
+        text-decoration: none;
+        color: white;
+      }
       body {
         margin: 0px;
         padding: 0px;
@@ -93,7 +97,7 @@
       .number {
         margin: 10px 0 0 0;
         color: white;
-        text-decoration: none;
+        
       }
       .mail-icon {
         display: flex;
@@ -108,9 +112,61 @@
       .email {
         margin: 5px 0 0 0;
         color: white;
-        text-decoration: none;
+  
+      }
+      .address-icon
+      {
+        display: flex;
+        align-items: center;
+        color: white;
+        flex-wrap:wrap;
+        margin:20px 0px 0px 0px ;
+      }
+      .address-icn
+      {
+        height:30px;
+        margin-left:20px;
+      }
+      .map 
+      { 
+        margin:7px 0 0 5px;
+        height:15px;
+      }
+      .address-icon a{
+        margin-left:10px;
+      }
+      .calender
+      {
+        display: flex;
+        align-items: center;
+        color:white;
+        gap:10px;
+        margin: 5px 0px 0px 25px;
+      }
+      .calendar-icon
+      {
+        height:25px;
+      }
+      .social-media-infocard
+      {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:25px;
+      }
+      .social-media-icn{
+        height:27px;
+        cursor: pointer;
+        transition:0.2s ease-in-out;
+      }
+      .social-media-icn:hover{
+       transform: scale(1.5);
       }
       /* Extra small devices (phones) */
+      .social-media-infocard
+      {
+        margin:10px 0 0 0 ;
+      }
       @media (max-width: 576px) {
         /*information card edit for mobile phone*/
         .container {
@@ -148,21 +204,43 @@
   </head>
   <body>
     <div class="container">
+      <!--Information box-->
       <div class="info">
+        <!--image and name-->
         <img src="./images/sample-image.png" class="info-image" alt="photo" />
         <h2 class="name">Satyam Raosaheb Katkade</h2>
         <button class="web-dev">Web Developer</button>
+        <!--phone number-->
         <div class="phone-call-icon">
           <img src="./logo/phone-call.png" alt="phone call icon" />
           <a class="number" href="+917588035979" target="hpone"
             >+917588035979</a
           >
         </div>
+        <!--mail-->
         <div class="mail-icon">
           <img src="./logo/mail.png" class="mail-icn" alt="mail-icon" />
           <a href="https://mail.google.com/" target="new" class="email"
             >satyamrk18@gmail.com</a
           >
+        </div>
+        <!--address-->
+        <div class="address-icon">
+          <img src="./logo/address.png" alt="address icon" class="address-icn">
+          <a href="https://maps.app.goo.gl/W9cypysq6qbd3Wvv9" target="new">panchvati, Nashik, <br> Maharashtra, India<img src="./logo/redirect.png" alt="map" class="map"></a>
+          </pre></a>
+        </div>
+        <!--birth date-->
+        <div class="calender">
+      <img src="./logo/calendar.png" alt="calender" class="calendar-icon">
+      <p class="birth-date">18/May/2005</p>
+        </div>
+        <!--social media-->
+        <div class="social-media-infocard">
+          <img src="./images/instagram.png" alt="insta-logo" class="social-media-icn">
+          <img src="./images/facebook.png" alt="facebook-logo" class="social-media-icn">
+          <img src="./images/linkedin.png" alt="linkedin logo" class="social-media-icn">
+          <img src="./images/github.png" alt="github logo" class="social-media-icn">
         </div>
       </div>
       <script>
