@@ -47,7 +47,7 @@
       }
       .info {
         height: 600px;
-        width: 350px;
+        width:350px;
         /* border: 3px solid white; */
         border-radius: 5%;
         margin: 50px auto;
@@ -69,6 +69,7 @@
       .name {
         color: aliceblue;
         text-align: center;
+        font-size:25px;
       }
       .web-dev {
         display: block;
@@ -185,29 +186,19 @@
       }
       
       @media (max-width: 576px) {
-        /*information card edit for mobile phone*/
-        
-        .info-container{
-          background-color: white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height:950px;
-          position: relative;
-        }
         /* Center the info card */
-        .info {
-          width: 350px;
-          margin: 0;
-          margin-top:10px;
-          height:600px;
-          
-        }
         .container
         {
         display: none;
         }
+        .info-container
+        {
+          background-color: pink;
+          display: flex;
+          align-items: center;
+          justify-content:center;
         
+        }
       .phn-container
         {
           display: flex;  
@@ -221,6 +212,34 @@
            position:absolute;
           bottom:0px;
         }
+        .info {
+  background-color:rgba(0, 0, 0, 0.402);
+  width:90% !important;
+  height: 300px;
+  margin:10px auto;
+}
+.info img
+{
+  height:70px;
+  width:70px;
+  margin-left:10px;
+}
+.img-and-info
+{
+  display: flex;
+  gap:10px;
+}
+.name{
+  font-size:25px;
+  margin-top:10px;
+}
+.web-dev{
+  width:150px;
+  font-size:16px;
+}
+
+
+
       }
 
       /* Small devices (tablets) */
@@ -255,8 +274,9 @@
       <!--Information box-->
       <div class="info">
         <!--image and name-->
-        <img src="./images/sample-image.png" class="info-image" alt="photo" />
+       <div class="img-and-info"> <img src="./images/sample-image.png" class="info-image" alt="photo" />
         <h2 class="name">Satyam Raosaheb Katkade</h2>
+        </div>
         <button class="web-dev">Web Developer</button>
         <!--phone number-->
         <div class="phone-call-icon">
