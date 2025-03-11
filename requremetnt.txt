@@ -1,1 +1,2 @@
 icon color = #F8D568
+cards background color= rgba(0, 0, 0, 0.402);

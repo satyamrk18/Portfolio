@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
       * {
         font-family: sans-serif;
@@ -16,10 +17,11 @@
         margin: 0px;
         padding: 0px;
         background-color: rgba(0, 0, 0, 0.906);
+        
       }
       .box {
-        height: 60px;
-        width: 60px;
+        height:40px;
+        width:40px;
         background-color: rgba(128, 128, 128, 0);
         margin: 3px;
         border-radius: 2px;
@@ -37,10 +39,11 @@
         transition: box-shadow 0.1s;
       }
 
-      .container {
+      .info-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        height:100vh;
       }
       .info {
         height: 600px;
@@ -52,7 +55,6 @@
         position: absolute;
         z-index: 2;
         top: 0px;
-        z-index: 2px;
         background: rgba(0, 0, 0, 0.402);
       }
       .info-image {
@@ -162,24 +164,62 @@
       .social-media-icn:hover{
        transform: scale(1.5);
       }
-      /* Extra small devices (phones) */
       .social-media-infocard
       {
         margin:10px 0 0 0 ;
       }
+      .container
+      {
+        height:600px;
+        width:67%;
+        background: rgba(0, 0, 0, 0.402);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        position:absolute;
+        top:7%;
+        left:30%;
+        border-radius:3%;
+        z-index:2;
+      }
+      
       @media (max-width: 576px) {
         /*information card edit for mobile phone*/
-        .container {
+        
+        .info-container{
+          background-color: white;
           display: flex;
-          justify-content: center;
           align-items: center;
-          height: 100vh;
+          justify-content: center;
+          height:950px;
+          position: relative;
         }
         /* Center the info card */
         .info {
           width: 350px;
           margin: 0;
-          margin-top: 50px;
+          margin-top:10px;
+          height:600px;
+          
+        }
+        .container
+        {
+        display: none;
+        }
+        
+      .phn-container
+        {
+          display: flex;  
+          justify-content: center;
+           align-items: center;
+           background-color: red;
+           margin:20px auto;
+           height: 350px;
+           width:80%;
+           z-index: 2;
+           position:absolute;
+          bottom:0px;
         }
       }
 
@@ -191,19 +231,27 @@
           justify-content: center;
           flex-direction: row;
         }
+        .container
+        {
+           height:600px;
+           width:50px;
+        }
+        
       }
 
       /* Medium devices (desktops) */
       @media (max-width: 992px) {
+        
       }
 
       /* Large devices (large desktops) */
       @media (max-width: 1200px) {
+       
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="info-container">
       <!--Information box-->
       <div class="info">
         <!--image and name-->
@@ -243,11 +291,17 @@
           <a href="https://github.com/satyamrk18"target=new><img src="./images/github.png" alt="github logo" class="social-media-icn"></a>
         </div>
       </div>
+      <!--only for moblie information card-->
+  <div class="phn-container"></div>
+      <!--summery and about me-->
+      <div class="container"></div>
       <script>
         for (let i = 0; i < 1035; i++) {
           document.write('<div class="box"></div>');
         }
       </script>
     </div>
+    
+    
   </body>
 </html>
