@@ -96,7 +96,9 @@ font-size:18px;
 list-style-type: none;
 padding:10px;
 }
-
+.phn-navbar{
+  display: none;
+}
 
 }
 
