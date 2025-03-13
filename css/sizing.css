@@ -1,0 +1,125 @@
+@media (max-width: 576px) {
+  /* Center the info card */
+  .container
+  {
+  display: none;
+  }
+  .info-container
+  {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height:400px;
+  }
+
+  .info {
+background-color:rgba(0, 0, 0, 0.402);
+width:90% !important;
+height:385px;
+margin:10px auto;
+}
+.info img
+{
+height:70px;
+width:70px;
+margin-left:10px;
+}
+.img-and-info
+{
+display: flex;
+gap:10px;
+}
+.name{
+font-size:25px;
+margin-top:10px;
+}
+.web-dev{
+width:150px;
+font-size:16px;
+}
+.phone-call-icon img
+{
+height:20px;
+width:20px;
+margin-left:35px;
+}
+.mail-icon img 
+{
+height: 20px;
+width: 20px;
+}
+.address-icon img
+{
+height:25px;
+width:25px;
+margin-left:30px;
+}
+.calender img
+{
+height:25px;
+width:25px;
+margin-bottom:10px;
+}
+.social-media-infocard img
+{
+height:25px;
+width:25px;
+position:relative;
+bottom:15px;
+}
+.phn-navbar
+{
+height:35px;
+width:350px;
+display:flex;
+align-items: center;
+justify-content: center;
+display:flex;
+align-items: center;
+justify-content: center;
+margin:10px auto;
+color: white;
+background-color: rgba(41, 39, 39, 0.68);
+border:2px solid gray;
+border-radius:15px;
+}
+.phn-navbar ul {
+display: flex;
+flex-wrap:wrap;
+text-align: center;
+padding:0px;
+margin:0px;
+}
+.phn-navbar li 
+{ 
+font-size:18px;
+list-style-type: none;
+padding:10px;
+}
+
+
+}
+
+/* Small devices (tablets) */
+@media (max-width: 768px) {
+  .info {
+    width: 300px;
+    display: block;
+    justify-content: center;
+    flex-direction: row;
+    z-index:2;
+  }
+  .container
+  {
+     height:600px;
+     width:50px;
+  }
+  
+}
+
+/* Medium devices (desktops) */
+@media (max-width: 992px) {
+ 
+}
+
+
