@@ -198,7 +198,6 @@ body {
   text-decoration: none;
   transition: color 0.2s ease-in-out, text-decoration-thickness 0.3s ease-in-out;
 }
-
 .navbar li:hover {
   color: #f8d568;
   text-decoration: underline;
