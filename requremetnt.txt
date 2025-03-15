@@ -1,3 +1,3 @@
 icon color = #F8D568
-cards background color= rgba(0, 0, 0, 0.402);
+cards background-color: rgba(0, 0, 0, 0.402);
 body background color=    background-color: rgba(0, 0, 0, 0.906);
