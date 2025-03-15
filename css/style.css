@@ -407,36 +407,27 @@ body {
   text-decoration-thickness: 3px;
   text-underline-offset: 7px;
 }
+/* nabar -2 for desktop */
+.nav-2
+{
+height:50px;
+width:100%;
+background-color:red;
+display:flex;
+margin-bottom:25px;
+}
 /* mian content */
 .main {
   height: 1500px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   /* background-color:white; */
 }
-.progressbar {
-  height: 100%;
-  width: 50px;
-  margin: 25px;
-  color: #f6e05e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.progressbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 200px;
-}
-.progressbar li {
-}
+
 .main-content {
   height:100%;
-  width:90%;
+  width:95%;
   background-color: rgba(0, 0, 0, 0.402);
   border-radius: 25px;
   margin-right: 35px;
@@ -464,8 +455,18 @@ color:white;
 .box-content:hover h1{
 color:#f8d568;
 }
+.v-nav button
+{
+  text-align: center;
+  border:1px solid black;
+  border-radius:5px;
+  height:35px;
+  background-color:#f8d568;
+  font-size:18px;
+}
 .social-handles {
   height: 100px;
   width: 100%;
   background-color: green;
+  
 }
