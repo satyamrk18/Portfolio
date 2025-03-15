@@ -237,14 +237,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100vh;
+  height:650px;
 }
 .info {
   height: 600px;
   width: 350px;
   /* border: 3px solid white; */
   border-radius: 5%;
-  margin: 50px auto;
+  margin: 20px auto;
   margin-left: 50px;
   position: absolute;
   z-index: 2;
@@ -366,7 +366,7 @@ body {
   justify-content: center;
   margin: auto;
   position: absolute;
-  top: 7%;
+  top:20px;
   left: 30%;
   border-radius: 25px;
   z-index: 2;
@@ -435,8 +435,8 @@ body {
 .progressbar li {
 }
 .main-content {
-  height: 100%;
-  width: 90%;
+  height:100%;
+  width:90%;
   background-color: rgba(0, 0, 0, 0.402);
   border-radius: 25px;
   margin-right: 35px;
@@ -464,7 +464,6 @@ color:white;
 .box-content:hover h1{
 color:#f8d568;
 }
-.box-content
 .social-handles {
   height: 100px;
   width: 100%;
