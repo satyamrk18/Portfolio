@@ -20,7 +20,6 @@ body {
 .info {
   height: 600px;
   width: 350px;
-  /* border: 3px solid white; */
   border-radius: 5%;
   margin: 20px auto;
   margin-left: 50px;
@@ -29,7 +28,15 @@ body {
   top: 0px;
   background: rgba(0, 0, 0, 0.402);
   box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.084);
+  cursor: pointer;
+  transition: border 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
+
+.info:hover {
+  border: 4px solid #f8d568;
+  transform: scale(1.05);
+}
+
 .info-image {
   height: 180px;
   width: 180px;
@@ -150,6 +157,12 @@ body {
   border-radius: 25px;
   z-index: 2;
   box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.084);
+  cursor: pointer;
+  transition: border 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+.container:hover {
+  border: 4px solid #f8d568;
+  transform: scale(1.03);
 }
 .phn-navbar {
   display: none;
@@ -265,26 +278,25 @@ body {
   height: 500px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
 }
 .smallcard {
-  height: 100%;
-  width: 30%;
+  height:100%;
+  width:30%;
   background-color: rgba(0, 0, 0, 0.402);
-  margin-left: 10px;
-  margin-right: 10px;
+ margin-top:15px;
   border-radius: 25px;
   box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.084);
-  transition: border 0.3s;
   cursor: pointer;
+  transition: border 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
 .smallcard:hover {
   border: 4px solid #f8d568;
-  border-radius: 25px;
-  box-shadow: none;
+  transform: scale(1.05);
 }
 .social-handles {
   height: 100px;
   width: 100%;
   background-color: green;
+  margin-top:50px;
 }
