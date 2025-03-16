@@ -454,14 +454,21 @@ color:white;
 .box-content:hover h1{
 color:#f8d568;
 }
-.v-nav button
+.nav-2
 {
-  text-align: center;
-  border:1px solid black;
-  border-radius:5px;
-  height:35px;
-  background-color:#f8d568;
-  font-size:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.nav-2 ul{
+display:flex;
+justify-content:space-between;
+gap:50px; 
+}
+.nav-2 li 
+{
+  display:flex;
+  text-align:center;
 }
 .social-handles {
   height: 100px;
