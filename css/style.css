@@ -68,6 +68,7 @@ body {
 .web-dev:hover {
   border: 2px solid rgba(255, 217, 0, 0.669);
   background-color: rgba(0, 0, 0, 0.906);
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.176);
 }
 .phone-call-icon img {
   height: 25px;
@@ -148,7 +149,7 @@ body {
   width: 67%;
   background: rgba(0, 0, 0, 0.402);
   display: flex;
-  align-items: center;
+  align-items:end;
   justify-content: center;
   margin: auto;
   position: absolute;
@@ -163,6 +164,25 @@ body {
 .container:hover {
   border: 4px solid #f8d568;
   transform: scale(1.03);
+}
+.resume-btn{
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  width: 175px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  background-color: rgba(240, 248, 255, 0.233);
+  cursor: pointer;
+  transition: border 0.3s ease-out;
+}
+.resume-btn:hover{
+  border: 2px solid rgba(255, 217, 0, 0.669);
+  background-color: rgba(0, 0, 0, 0.906);
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.176);
 }
 .phn-navbar {
   display: none;
@@ -223,10 +243,13 @@ body {
   box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.084);
   cursor: pointer;
   transition: border 0.3s;
+  position:relative;
 }
+
 .main-content:hover {
   border: 4px solid #f8d568;
 }
+
 .main-content h1 {
   display: block;
   margin: 10px auto;
